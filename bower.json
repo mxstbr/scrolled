@@ -1,16 +1,16 @@
 {
-  "name": "hello-javascript",
+  "name": "scrolled",
   "version": "1.0.0",
   "authors": [
-    "Nolan Lawson <nolan@nolanlawson.com>"
+    "Max Stoiber <contact@mxstbr.com>"
   ],
-  "description": "Demo of a JavaScript module that supports many publishing options",
-  "main": "dist/hello-javascript.js",
+  "description": "A tiny library which adds a class on page load and when the user has scrolled.",
+  "main": "dist/scrolled.js",
   "moduleType": [
     "node"
   ],
-  "license": "Apache-2.0",
-  "homepage": "https://github.com/nolanlawson/hello-javascript",
+  "license": "MIT",
+  "homepage": "https://github.com/mxstbr/scrolled",
   "ignore": [
     "**/.*",
     "node_modules",
