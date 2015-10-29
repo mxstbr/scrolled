@@ -35,7 +35,7 @@ Then you can use `dist/scrolled.js`.
 
 ## Usage
 
-Scrolled is a tiny, cross-browser compatible (please report any issues you find!) library which adds a `js-has-loaded` class when the page has loaded, a `js-has-scrolled` class when the user scrolled the page. To get started, include the library in one of your projects using one of the methods above. Initialize it as soon as possible simply by calling the `scrolled` function, i.e.:
+Scrolled is a tiny, cross-browser compatible (please report any issues you find!) library which adds a `js-has-loaded` class when the page has loaded, a `js-has-scrolled` class when the user scrolled the page. To get started, include the library in one of your projects using one of the methods above. Initialize it as soon as possible by simly calling the `scrolled` function, i.e.:
 
 ```JavaScript
 scrolled([options]);
