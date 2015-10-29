@@ -1,6 +1,6 @@
 {
   "name": "scrolled",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A tiny library which adds a class on page load and when the user has scrolled.",
   "author": "Max Stoiber <contact@mxstbr.com>",
   "license": "MIT",
