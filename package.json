@@ -1,0 +1,30 @@
+{
+  "name": "scrolled",
+  "version": "1.0.0",
+  "description": "A tiny library which adds a class on page load and when the user has scrolled.",
+  "author": "Max Stoiber <contact@mxstbr.com>",
+  "license": "MIT",
+  "repository": "https://github.com/mxstbr/scrolled.git",
+  "main": "dist-node/index.js",
+  "jsnext:main": "src/index.js",
+  "jspm": {
+    "main": "dist/scrolled.js"
+  },
+  "scripts": {
+    "build-node": "babel src --out-dir dist-node",
+    "build-browser": "npm run browserify && npm run uglify",
+    "browserify": "browserify --standalone scrolled dist-node | derequire > dist/scrolled.js",
+    "uglify": "uglifyjs -mc < dist/scrolled.js > dist/scrolled.min.js",
+    "clean": "rimraf dist dist-node && mkdirp dist dist-node",
+    "build": "npm run clean && npm run build-node && npm run build-browser",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "browserify": "^11.2.0",
+    "derequire": "^2.0.2",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.4.3",
+    "uglify-js": "^2.5.0"
+  }
+}
